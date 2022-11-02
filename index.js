@@ -46,18 +46,16 @@ const albums = [
   },
 ];
 
-function albumsFilter(){
-    const filterAlbums = albums.filter(object =>{
-    return object.rating >= 
-});
-}
 albums.forEach((albums) => {
   console.log(albums.album);
+
   albums.rating.forEach((number) => {
     console.log(number);
   });
 });
 
-console.log(albums);
-const result = albums.filter(albums);
-console.log(result);
+albums
+  .filter((album) => album.rating[0] > 71)
+  .forEach((album) => {
+    console.log(album);
+  });
