@@ -55,7 +55,7 @@ albums.forEach((albums) => {
 });
 
 albums
-  .filter((album) => album.rating[0] > 71)
+  .filter((album) => album.rating[0] >= 71)
   .forEach((album) => {
     console.log(album);
   });
